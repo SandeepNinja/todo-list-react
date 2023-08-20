@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App {
+  background-color: yellowgreen;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* position: relative; */
+}
+.AddTodoContainer {
+  /* background-color: red; */
+}
+.TodolistContainer {
+  background-color: rgba(224, 224, 224, 0.753);
+  margin: 10vh;
+  padding: 10px;
+  width: 60vw;
+  overflow: auto;
+  padding: 27px;
+  box-shadow: 10px 10px 10px darkgreen;
+  border-radius: 25px;
+}
+.horizontalLine {
+  border: 1px solid rgba(182, 180, 180, 0.904);
+  width: 100 px;
+}
+
+img {
+  height: 15px;
+  padding-right: 10px;
+}
+/* input {
+  border: none;
+  height: 25px;
+  border-radius: 10px;
+  padding-left: 10px;
+} */
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+.rightAction {
+  display: inline-block;
+  float: right;
+  padding-right: 10px;
+}
+/* .taskContainer {
+  padding: 10px;
+  border-radius: 10px;
+} */
+.taskContainer {
+  display: inline-block;
+  width: 90%;
+  background: yellow;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 10px 10px 20px yellowgreen;
+}
+
+.taskContainer:hover {
+  background-color: white;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 100, 30);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+/* .inputAddButton {
+  display: inline-block;
+  border-radius: 5px;
+  width: 69%;
+  margin-left: 10px;
+  margin-bottom: -1px;
+  border: 2px solid green;
+  float: left;
+} */
+/* button {
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+  border: 2px solid green;
+  border-radius: 5px;
+  background-color: #5fdb55;
+} */
+button:hover {
+  background-color: #55c7db;
+}
+.addTodo {
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.addTodo input {
+  border: none;
+  width: 70%;
+  margin-right: 5px;
+  box-shadow: 3px 0px 10px gray;
+  border-radius: 5px;
+  padding-left: 10px;
+  background-color: #f1ffd3;
+}
+.addTodo button {
+  border-radius: 5px;
+  background-color: green;
+  box-shadow: 3px 0px 10px gray;
+}
+@media screen and (max-width: 460px) {
+  .TodolistContainer {
+    margin-left: 40px;
+    margin-right: 40px;
+    /* background-color: red; */
+    width: auto;
+  }
+  .addTodo {
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    justify-content: center;
+    padding-bottom: 10px;
+    flex-direction: column;
+  }
+  .addTodo input {
+    border: none;
+    width: 95%;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    box-shadow: 3px 0px 10px gray;
+    border-radius: 5px;
+    padding: 6px;
+    background-color: #f1ffd3;
+  }
+  .addTodo button {
+    border-radius: 5px;
+    padding: 3px;
+    box-shadow: 3px 0px 10px gray;
+    background-color: green;
+  }
+}
